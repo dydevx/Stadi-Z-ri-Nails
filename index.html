@@ -8,11 +8,18 @@
       content="Stadi Züri Nails in Zürich. European nail care, birthday offers, booking, gallery, menu and contact information."
     />
     <title>Stadi Züri Nails | Zürich Nail Salon</title>
+    <link rel="icon" href="avatar.jpg" type="image/jpeg" />
+    <meta property="og:image" content="avatar.jpg" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#home" aria-label="Stadi Züri Nails">Stadi Züri Nails</a>
+      <a class="brand" href="#home" aria-label="Stadi Züri Nails">
+        <span class="brand-avatar" aria-hidden="true">
+          <img src="avatar.jpg" alt="" />
+        </span>
+        <span class="brand-name">Stadi Züri Nails</span>
+      </a>
 
       <nav class="main-nav" aria-label="Primary navigation">
         <a href="#salon" data-i18n="nav.salon">Salon</a>
@@ -40,7 +47,7 @@
         </video>
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="hero-signature" aria-hidden="true">
-          <span>SZ</span>
+          <img src="avatar.jpg" alt="" />
         </div>
 
         <div class="hero-content">
@@ -161,41 +168,31 @@
             <article class="price-card">
               <h3 data-i18n="menu.hands.title">Hands</h3>
               <ul class="price-list">
-                <li><span data-i18n="menu.hands.0">Manicure</span><span class="price" data-price-kind="from" data-price="35 CHF">from 35 CHF</span></li>
-                <li><span data-i18n="menu.hands.1">Manicure with Shellac</span><span class="price" data-price-kind="from" data-price="60 CHF">from 60 CHF</span></li>
-                <li><span data-i18n="menu.hands.2">Natural nail overlay incl. extension</span><span class="price" data-price-kind="from" data-price="80 CHF">from 80 CHF</span></li>
-                <li><span data-i18n="menu.hands.3">New full set with colour, glitter or classic French</span><span class="price" data-price-kind="from" data-price="90 CHF">from 90 CHF</span></li>
-                <li><span data-i18n="menu.hands.4">Natural refill</span><span class="price" data-price-kind="from" data-price="70 CHF">from 70 CHF</span></li>
-                <li><span data-i18n="menu.hands.5">Refill with colour, glitter or classic French</span><span class="price" data-price-kind="from" data-price="80 CHF">from 80 CHF</span></li>
+                <li><span data-i18n="menu.hands.0">Manicure</span><span class="price" data-price="30 CHF">30 CHF</span></li>
+                <li><span data-i18n="menu.hands.1">Manicure with Shellac</span><span class="price" data-price="50 CHF">50 CHF</span></li>
+                <li><span data-i18n="menu.hands.2">Natural nail overlay incl. extension</span><span class="price" data-price="80 CHF">80 CHF</span></li>
+                <li><span data-i18n="menu.hands.3">New full set with colour, glitter or classic French</span><span class="price" data-price="90 CHF">90 CHF</span></li>
+                <li>
+                  <span data-i18n="menu.hands.4">New full set with chrome, cat-eye or baby boomer</span>
+                  <span class="price price-promo"><span class="price-old">125 CHF</span><span data-price="110 CHF">110 CHF</span></span>
+                </li>
+                <li><span data-i18n="menu.hands.5">Natural refill</span><span class="price" data-price="70 CHF">70 CHF</span></li>
+                <li><span data-i18n="menu.hands.6">Refill with colour, glitter or classic French</span><span class="price" data-price="80 CHF">80 CHF</span></li>
               </ul>
             </article>
 
             <article class="price-card">
               <h3 data-i18n="menu.feet.title">Feet</h3>
               <ul class="price-list">
-                <li><span data-i18n="menu.feet.0">Quick pedicure with Shellac</span><span class="price" data-price-kind="from" data-price="50 CHF">from 50 CHF</span></li>
-                <li><span data-i18n="menu.feet.1">Classic pedicure with massage</span><span class="price" data-price-kind="from" data-price="60 CHF">from 60 CHF</span></li>
-                <li><span data-i18n="menu.feet.2">Pedicure with polish and massage</span><span class="price" data-price-kind="from" data-price="75 CHF">from 75 CHF</span></li>
-                <li><span data-i18n="menu.feet.3">Pedicure with Shellac and massage</span><span class="price" data-price-kind="from" data-price="85 CHF">from 85 CHF</span></li>
-                <li><span data-i18n="menu.feet.4">Footlogix pedicure with Shellac</span><span class="price" data-price-kind="from" data-price="110 CHF">from 110 CHF</span></li>
-                <li><span data-i18n="menu.feet.5">Toenail modelling with acrylic/gel</span><span class="price" data-price-kind="from" data-price="80 CHF">from 80 CHF</span></li>
-              </ul>
-            </article>
-
-            <article class="price-card price-card-wide">
-              <h3 data-i18n="menu.lashes.title">Eyelash extensions</h3>
-              <ul class="price-list multi-column">
-                <li><span data-i18n="menu.lashes.0">Natural look</span><span class="price" data-price="100 CHF">100 CHF</span></li>
-                <li><span data-i18n="menu.lashes.1">Mascara look</span><span class="price" data-price="110 CHF">110 CHF</span></li>
-                <li><span data-i18n="menu.lashes.2">Volume look</span><span class="price" data-price="130 CHF">130 CHF</span></li>
-                <li><span data-i18n="menu.lashes.3">Mega look</span><span class="price" data-price="150 CHF">150 CHF</span></li>
-                <li><span data-i18n="menu.lashes.4">Refill after 2 weeks</span><span class="price" data-price="70 CHF">70 CHF</span></li>
-                <li><span data-i18n="menu.lashes.5">Refill after 3 weeks</span><span class="price" data-price="80 CHF">80 CHF</span></li>
-                <li><span data-i18n="menu.lashes.6">Refill after 4 weeks</span><span class="price" data-price="95 CHF">95 CHF</span></li>
-                <li><span data-i18n="menu.lashes.7">Removal</span><span class="price" data-price="40 CHF">40 CHF</span></li>
-                <li><span data-i18n="menu.lashes.8">Eyebrow plucking</span><span class="price" data-price="20 CHF">20 CHF</span></li>
-                <li><span data-i18n="menu.lashes.9">Eyebrow lamination</span><span class="price" data-price="70 CHF">70 CHF</span></li>
-                <li><span data-i18n="menu.lashes.10">Lash lifting</span><span class="price" data-price="80 CHF">80 CHF</span></li>
+                <li><span data-i18n="menu.feet.0">Quick pedicure with Shellac</span><span class="price" data-price="70 CHF">70 CHF</span></li>
+                <li><span data-i18n="menu.feet.1">Classic pedicure with massage</span><span class="price" data-price="60 CHF">60 CHF</span></li>
+                <li><span data-i18n="menu.feet.2">Pedicure with polish and massage</span><span class="price" data-price="75 CHF">75 CHF</span></li>
+                <li>
+                  <span data-i18n="menu.feet.3">Pedicure with Shellac and massage</span>
+                  <span class="price price-promo"><span class="price-old">90 CHF</span><span data-price="85 CHF">85 CHF</span></span>
+                </li>
+                <li><span data-i18n="menu.feet.4">Footlogix pedicure with Shellac</span><span class="price" data-price="110 CHF">110 CHF</span></li>
+                <li><span data-i18n="menu.feet.5">Toenail modelling with acrylic/gel</span><span class="price" data-price="80 CHF">80 CHF</span></li>
               </ul>
             </article>
 
@@ -206,7 +203,10 @@
                 <li><span data-i18n="menu.combo.1">Manicure + pedicure with polish</span><span class="price" data-price="115 CHF">115 CHF</span></li>
                 <li><span data-i18n="menu.combo.2">Manicure + pedicure with Shellac</span><span class="price" data-price="135 CHF">135 CHF</span></li>
                 <li><span data-i18n="menu.combo.3">Refill + pedicure with Shellac</span><span class="price" data-price="150 CHF">150 CHF</span></li>
-                <li><span data-i18n="menu.combo.4">New full set + pedicure with Shellac</span><span class="price" data-price="160 CHF">160 CHF</span></li>
+                <li>
+                  <span data-i18n="menu.combo.4">New full set + pedicure with Shellac</span>
+                  <span class="price price-promo"><span class="price-old">175 CHF</span><span data-price="160 CHF">160 CHF</span></span>
+                </li>
               </ul>
             </article>
 
@@ -217,9 +217,38 @@
                 <li><span data-i18n="menu.extra.1">Nail repair</span><span class="price" data-price="10 CHF">10 CHF</span></li>
                 <li><span data-i18n="menu.extra.2">Nail design per nail</span><span class="price" data-price-kind="from" data-price="3 CHF">from 3 CHF</span></li>
                 <li><span data-i18n="menu.extra.3">Nail design full set</span><span class="price" data-price-kind="from" data-price="20 CHF">from 20 CHF</span></li>
-                <li><span data-i18n="menu.extra.4">Nail piercing</span><span class="price" data-price-kind="from" data-price="4 CHF">from 4 CHF</span></li>
-                <li><span data-i18n="menu.extra.5">Rhinestone</span><span class="price" data-price-kind="from" data-price="1 CHF">from 1 CHF</span></li>
+                <li><span data-i18n="menu.extra.4">Nail piercing</span><span class="price" data-price-kind="from" data-price="15 CHF">from 15 CHF</span></li>
+                <li><span data-i18n="menu.extra.5">Rhinestone</span><span class="price" data-price-kind="from" data-price="3 CHF">from 3 CHF</span></li>
                 <li><span data-i18n="menu.extra.6">Extra long</span><span class="price" data-price-kind="from" data-price="10 CHF">from 10 CHF</span></li>
+              </ul>
+            </article>
+
+            <article class="price-card price-card-wide">
+              <h3 data-i18n="menu.lashes.title">Eyelash extensions</h3>
+              <ul class="price-list multi-column">
+                <li>
+                  <span data-i18n="menu.lashes.0">Natural look</span>
+                  <span class="price price-promo"><span class="price-old">110 CHF</span><span data-price="100 CHF">100 CHF</span></span>
+                </li>
+                <li>
+                  <span data-i18n="menu.lashes.1">Mascara look</span>
+                  <span class="price price-promo"><span class="price-old">125 CHF</span><span data-price="110 CHF">110 CHF</span></span>
+                </li>
+                <li>
+                  <span data-i18n="menu.lashes.2">Volume look</span>
+                  <span class="price price-promo"><span class="price-old">150 CHF</span><span data-price="130 CHF">130 CHF</span></span>
+                </li>
+                <li>
+                  <span data-i18n="menu.lashes.3">Mega look</span>
+                  <span class="price price-promo"><span class="price-old">180 CHF</span><span data-price="150 CHF">150 CHF</span></span>
+                </li>
+                <li><span data-i18n="menu.lashes.4">Refill after 2 weeks</span><span class="price" data-price="70 CHF">70 CHF</span></li>
+                <li><span data-i18n="menu.lashes.5">Refill after 3 weeks</span><span class="price" data-price="80 CHF">80 CHF</span></li>
+                <li><span data-i18n="menu.lashes.6">Refill after 4 weeks</span><span class="price" data-price="95 CHF">95 CHF</span></li>
+                <li><span data-i18n="menu.lashes.7">Removal</span><span class="price" data-price="40 CHF">40 CHF</span></li>
+                <li><span data-i18n="menu.lashes.8">Eyebrow plucking</span><span class="price" data-price="20 CHF">20 CHF</span></li>
+                <li><span data-i18n="menu.lashes.9">Eyebrow lamination</span><span class="price" data-price="70 CHF">70 CHF</span></li>
+                <li><span data-i18n="menu.lashes.10">Lash lifting</span><span class="price" data-price="80 CHF">80 CHF</span></li>
               </ul>
             </article>
           </div>
@@ -293,9 +322,9 @@
               <span data-i18n="contact.phoneLabel">Phone</span>
               <strong>044 261 0002</strong>
             </a>
-            <a href="https://www.instagram.com/newyorknails_stadelhofer38zuri/" target="_blank" rel="noreferrer">
+            <a href="https://www.instagram.com/newyorknails.stadelhofer38zuri/" target="_blank" rel="noreferrer">
               <span>Instagram</span>
-              <strong>@newyorknails_stadelhofer38zuri</strong>
+              <strong>@newyorknails.stadelhofer38zuri</strong>
             </a>
             <a href="https://beprobooking.com/salon/new-york-nails-stadelhofen" target="_blank" rel="noreferrer">
               <span data-i18n="contact.bookingLabel">Booking</span>
