@@ -169,7 +169,28 @@ a {
 }
 
 .flag {
-  line-height: 1;
+  position: relative;
+  flex: 0 0 19px;
+  width: 19px;
+  height: 13px;
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(7, 18, 15, 0.18);
+}
+
+.flag-gb {
+  background:
+    linear-gradient(34deg, transparent 39%, #ffffff 39% 47%, #c8102e 47% 53%, #ffffff 53% 61%, transparent 61%),
+    linear-gradient(-34deg, transparent 39%, #ffffff 39% 47%, #c8102e 47% 53%, #ffffff 53% 61%, transparent 61%),
+    linear-gradient(0deg, transparent 35%, #ffffff 35% 65%, transparent 65%),
+    linear-gradient(90deg, transparent 35%, #ffffff 35% 65%, transparent 65%),
+    linear-gradient(0deg, transparent 43%, #c8102e 43% 57%, transparent 57%),
+    linear-gradient(90deg, transparent 43%, #c8102e 43% 57%, transparent 57%),
+    #012169;
+}
+
+.flag-de {
+  background: linear-gradient(180deg, #000000 0 33.33%, #dd0000 33.33% 66.66%, #ffce00 66.66% 100%);
 }
 
 .hero {
