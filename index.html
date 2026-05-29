@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Stadi Züri Nails in Zürich. European nail care, birthday offers, booking, gallery, menu and contact information."
+    />
+    <title>Stadi Züri Nails | Zürich Nail Salon</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Stadi Züri Nails">Stadi Züri Nails</a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#salon" data-i18n="nav.salon">Salon</a>
+        <a href="#menu" data-i18n="nav.menu">Menu</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="#visit" data-i18n="nav.visit">Visit</a>
+      </nav>
+
+      <div class="language-switch" role="group" aria-label="Language switcher">
+        <button class="language-button is-active" type="button" data-lang="en" aria-pressed="true">
+          <span class="flag" aria-hidden="true">🇬🇧</span>
+          <span>EN</span>
+        </button>
+        <button class="language-button" type="button" data-lang="de" aria-pressed="false">
+          <span class="flag" aria-hidden="true">🇩🇪</span>
+          <span>DE</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <video class="hero-video" autoplay muted loop playsinline poster="hinh1.jpg">
+          <source src="video1.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-signature" aria-hidden="true">
+          <span>SZ</span>
+        </div>
+
+        <div class="hero-content">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Zurich nail studio</p>
+          <h1 id="hero-title">Stadi Züri Nails</h1>
+          <p class="hero-copy" data-i18n="hero.copy">
+            Elegant nail care in the heart of Zürich, shaped for polished everyday moments and special occasions.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://beprobooking.com/salon/new-york-nails-stadelhofen" target="_blank" rel="noreferrer" data-i18n="hero.book">
+              Book now
+            </a>
+            <a class="button button-secondary" href="https://maps.app.goo.gl/z9JrULjDoDtWdJbu8" target="_blank" rel="noreferrer" data-i18n="hero.map">
+              Open map
+            </a>
+          </div>
+        </div>
+
+        <dl class="hero-facts" aria-label="Salon highlights">
+          <div>
+            <dt data-i18n="facts.locationLabel">Address</dt>
+            <dd>Stadelhoferstrasse 38, 8001 Zürich</dd>
+          </div>
+          <div>
+            <dt data-i18n="facts.phoneLabel">Phone</dt>
+            <dd><a href="tel:+41442610002">044 261 0002</a></dd>
+          </div>
+          <div>
+            <dt data-i18n="facts.offerLabel">Birthday</dt>
+            <dd data-i18n="facts.offerText">10% off on your birthday</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="section salon-section" id="salon">
+        <div class="section-inner split-layout">
+          <div class="copy-block">
+            <p class="eyebrow" data-i18n="salon.eyebrow">Stadelhofen, Zürich</p>
+            <h2 data-i18n="salon.title">A refined nail stop near the city center.</h2>
+            <p data-i18n="salon.copy">
+              Stadi Züri Nails brings together clean European styling, careful shaping and expressive nail art in a calm studio setting.
+            </p>
+          </div>
+          <div class="editorial-media">
+            <figure class="feature-media feature-media-main">
+              <img src="hinh1.jpg" alt="Interior detail at Stadi Züri Nails" />
+            </figure>
+            <figure class="feature-media feature-media-accent">
+              <img src="hinh2.jpg" alt="Salon detail at Stadi Züri Nails" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services-section" aria-labelledby="services-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="services.eyebrow">Nail care</p>
+            <h2 id="services-title" data-i18n="services.title">Made for natural polish and statement detail.</h2>
+          </div>
+          <div class="service-grid">
+            <article class="service-card">
+              <span class="service-index" aria-hidden="true">01</span>
+              <h3 data-i18n="services.cards.0.title">Manicure</h3>
+              <p data-i18n="services.cards.0.copy">Clean cuticle work, considered shaping and fresh color for everyday wear.</p>
+            </article>
+            <article class="service-card">
+              <span class="service-index" aria-hidden="true">02</span>
+              <h3 data-i18n="services.cards.1.title">Gel & extensions</h3>
+              <p data-i18n="services.cards.1.copy">Durable finishes and length tailored to your preferred look.</p>
+            </article>
+            <article class="service-card">
+              <span class="service-index" aria-hidden="true">03</span>
+              <h3 data-i18n="services.cards.2.title">Nail art</h3>
+              <p data-i18n="services.cards.2.copy">Minimal French, soft shimmer or bolder designs with a precise salon finish.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section offer-section" aria-labelledby="offer-title">
+        <div class="section-inner offer-layout">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="offers.eyebrow">Birthday offers</p>
+            <h2 id="offer-title" data-i18n="offers.title">A little extra for your birthday in Switzerland.</h2>
+          </div>
+          <div class="offer-list">
+            <article class="offer-card">
+              <span class="offer-value">10%</span>
+              <div>
+                <h3 data-i18n="offers.cards.0.title">Birthday discount</h3>
+                <p data-i18n="offers.cards.0.copy">Everyone receives 10% off on their birthday.</p>
+              </div>
+            </article>
+            <article class="offer-card">
+              <span class="offer-value">50 CHF</span>
+              <div>
+                <h3 data-i18n="offers.cards.1.title">Under 18 birthday gift</h3>
+                <p data-i18n="offers.cards.1.copy">Guests under 18 receive a 50 CHF gift voucher on their birthday.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section menu-section" id="menu" aria-labelledby="menu-title">
+        <div class="section-inner">
+          <div class="section-heading menu-heading">
+            <div>
+              <p class="eyebrow" data-i18n="menu.eyebrow">Treatment menu</p>
+              <h2 id="menu-title" data-i18n="menu.title">Choose your next nail appointment.</h2>
+            </div>
+            <a class="button button-primary compact" href="https://beprobooking.com/salon/new-york-nails-stadelhofen" target="_blank" rel="noreferrer" data-i18n="menu.book">
+              Book appointment
+            </a>
+          </div>
+          <div class="price-menu" aria-label="Treatment price list">
+            <article class="price-card">
+              <h3 data-i18n="menu.hands.title">Hands</h3>
+              <ul class="price-list">
+                <li><span data-i18n="menu.hands.0">Manicure</span><span class="price" data-price-kind="from" data-price="35 CHF">from 35 CHF</span></li>
+                <li><span data-i18n="menu.hands.1">Manicure with Shellac</span><span class="price" data-price-kind="from" data-price="60 CHF">from 60 CHF</span></li>
+                <li><span data-i18n="menu.hands.2">Natural nail overlay incl. extension</span><span class="price" data-price-kind="from" data-price="80 CHF">from 80 CHF</span></li>
+                <li><span data-i18n="menu.hands.3">New full set with colour, glitter or classic French</span><span class="price" data-price-kind="from" data-price="90 CHF">from 90 CHF</span></li>
+                <li><span data-i18n="menu.hands.4">Natural refill</span><span class="price" data-price-kind="from" data-price="70 CHF">from 70 CHF</span></li>
+                <li><span data-i18n="menu.hands.5">Refill with colour, glitter or classic French</span><span class="price" data-price-kind="from" data-price="80 CHF">from 80 CHF</span></li>
+              </ul>
+            </article>
+
+            <article class="price-card">
+              <h3 data-i18n="menu.feet.title">Feet</h3>
+              <ul class="price-list">
+                <li><span data-i18n="menu.feet.0">Quick pedicure with Shellac</span><span class="price" data-price-kind="from" data-price="50 CHF">from 50 CHF</span></li>
+                <li><span data-i18n="menu.feet.1">Classic pedicure with massage</span><span class="price" data-price-kind="from" data-price="60 CHF">from 60 CHF</span></li>
+                <li><span data-i18n="menu.feet.2">Pedicure with polish and massage</span><span class="price" data-price-kind="from" data-price="75 CHF">from 75 CHF</span></li>
+                <li><span data-i18n="menu.feet.3">Pedicure with Shellac and massage</span><span class="price" data-price-kind="from" data-price="85 CHF">from 85 CHF</span></li>
+                <li><span data-i18n="menu.feet.4">Footlogix pedicure with Shellac</span><span class="price" data-price-kind="from" data-price="110 CHF">from 110 CHF</span></li>
+                <li><span data-i18n="menu.feet.5">Toenail modelling with acrylic/gel</span><span class="price" data-price-kind="from" data-price="80 CHF">from 80 CHF</span></li>
+              </ul>
+            </article>
+
+            <article class="price-card price-card-wide">
+              <h3 data-i18n="menu.lashes.title">Eyelash extensions</h3>
+              <ul class="price-list multi-column">
+                <li><span data-i18n="menu.lashes.0">Natural look</span><span class="price" data-price="100 CHF">100 CHF</span></li>
+                <li><span data-i18n="menu.lashes.1">Mascara look</span><span class="price" data-price="110 CHF">110 CHF</span></li>
+                <li><span data-i18n="menu.lashes.2">Volume look</span><span class="price" data-price="130 CHF">130 CHF</span></li>
+                <li><span data-i18n="menu.lashes.3">Mega look</span><span class="price" data-price="150 CHF">150 CHF</span></li>
+                <li><span data-i18n="menu.lashes.4">Refill after 2 weeks</span><span class="price" data-price="70 CHF">70 CHF</span></li>
+                <li><span data-i18n="menu.lashes.5">Refill after 3 weeks</span><span class="price" data-price="80 CHF">80 CHF</span></li>
+                <li><span data-i18n="menu.lashes.6">Refill after 4 weeks</span><span class="price" data-price="95 CHF">95 CHF</span></li>
+                <li><span data-i18n="menu.lashes.7">Removal</span><span class="price" data-price="40 CHF">40 CHF</span></li>
+                <li><span data-i18n="menu.lashes.8">Eyebrow plucking</span><span class="price" data-price="20 CHF">20 CHF</span></li>
+                <li><span data-i18n="menu.lashes.9">Eyebrow lamination</span><span class="price" data-price="70 CHF">70 CHF</span></li>
+                <li><span data-i18n="menu.lashes.10">Lash lifting</span><span class="price" data-price="80 CHF">80 CHF</span></li>
+              </ul>
+            </article>
+
+            <article class="price-card">
+              <h3 data-i18n="menu.combo.title">Combo offer</h3>
+              <ul class="price-list">
+                <li><span data-i18n="menu.combo.0">Manicure + pedicure without polish</span><span class="price" data-price="90 CHF">90 CHF</span></li>
+                <li><span data-i18n="menu.combo.1">Manicure + pedicure with polish</span><span class="price" data-price="115 CHF">115 CHF</span></li>
+                <li><span data-i18n="menu.combo.2">Manicure + pedicure with Shellac</span><span class="price" data-price="135 CHF">135 CHF</span></li>
+                <li><span data-i18n="menu.combo.3">Refill + pedicure with Shellac</span><span class="price" data-price="150 CHF">150 CHF</span></li>
+                <li><span data-i18n="menu.combo.4">New full set + pedicure with Shellac</span><span class="price" data-price="160 CHF">160 CHF</span></li>
+              </ul>
+            </article>
+
+            <article class="price-card">
+              <h3 data-i18n="menu.extra.title">Extras</h3>
+              <ul class="price-list">
+                <li><span data-i18n="menu.extra.0">Removal</span><span class="price" data-price="30 CHF">30 CHF</span></li>
+                <li><span data-i18n="menu.extra.1">Nail repair</span><span class="price" data-price="10 CHF">10 CHF</span></li>
+                <li><span data-i18n="menu.extra.2">Nail design per nail</span><span class="price" data-price-kind="from" data-price="3 CHF">from 3 CHF</span></li>
+                <li><span data-i18n="menu.extra.3">Nail design full set</span><span class="price" data-price-kind="from" data-price="20 CHF">from 20 CHF</span></li>
+                <li><span data-i18n="menu.extra.4">Nail piercing</span><span class="price" data-price-kind="from" data-price="4 CHF">from 4 CHF</span></li>
+                <li><span data-i18n="menu.extra.5">Rhinestone</span><span class="price" data-price-kind="from" data-price="1 CHF">from 1 CHF</span></li>
+                <li><span data-i18n="menu.extra.6">Extra long</span><span class="price" data-price-kind="from" data-price="10 CHF">from 10 CHF</span></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="gallery.eyebrow">Gallery</p>
+            <h2 id="gallery-title" data-i18n="gallery.title">Recent nail moods from the studio.</h2>
+          </div>
+          <div class="gallery-grid">
+            <img src="1.jpg" alt="Nail design from Stadi Züri Nails" loading="lazy" />
+            <img src="2.jpg" alt="Nail design from Stadi Züri Nails" loading="lazy" />
+            <img src="3.jpg" alt="Nail design from Stadi Züri Nails" loading="lazy" />
+            <img src="4.jpg" alt="Nail design from Stadi Züri Nails" loading="lazy" />
+            <img src="5.jpg" alt="Nail design from Stadi Züri Nails" loading="lazy" />
+            <img src="6.jpg" alt="Nail design from Stadi Züri Nails" loading="lazy" />
+            <img src="7.jpg" alt="Nail design from Stadi Züri Nails" loading="lazy" />
+            <img src="8.jpg" alt="Nail design from Stadi Züri Nails" loading="lazy" />
+            <img src="9.jpg" alt="Nail design from Stadi Züri Nails" loading="lazy" />
+            <img src="10.jpg" alt="Nail design from Stadi Züri Nails" loading="lazy" />
+            <img src="11.jpg" alt="Nail design from Stadi Züri Nails" loading="lazy" />
+            <img src="12.jpg" alt="Nail design from Stadi Züri Nails" loading="lazy" />
+            <img src="13.jpg" alt="Nail design from Stadi Züri Nails" loading="lazy" />
+            <img src="14.jpg" alt="Nail design from Stadi Züri Nails" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section video-section" aria-labelledby="video-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="videos.eyebrow">Studio video</p>
+            <h2 id="video-title" data-i18n="videos.title">A closer look at the finish.</h2>
+          </div>
+          <div class="video-grid">
+            <video controls playsinline preload="metadata" poster="hinh1.jpg">
+              <source src="video1.mp4" type="video/mp4" />
+            </video>
+            <video controls playsinline preload="metadata" poster="hinh2.jpg">
+              <source src="video2.mp4" type="video/mp4" />
+            </video>
+            <video controls playsinline preload="metadata" poster="13.jpg">
+              <source src="video3.mp4" type="video/mp4" />
+            </video>
+            <video controls playsinline preload="metadata" poster="14.jpg">
+              <source src="video4.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section class="section visit-section" id="visit" aria-labelledby="visit-title">
+        <div class="section-inner visit-layout">
+          <div class="copy-block">
+            <p class="eyebrow" data-i18n="visit.eyebrow">Visit us</p>
+            <h2 id="visit-title" data-i18n="visit.title">Find us at Stadelhoferstrasse 38.</h2>
+            <p data-i18n="visit.copy">
+              Book online, call the salon or follow the studio on Instagram for more nail inspiration.
+            </p>
+          </div>
+
+          <div class="contact-panel" aria-label="Salon contact information">
+            <a href="https://maps.app.goo.gl/z9JrULjDoDtWdJbu8" target="_blank" rel="noreferrer">
+              <span data-i18n="contact.addressLabel">Address</span>
+              <strong>Stadelhoferstrasse 38, 8001 Zürich</strong>
+            </a>
+            <a href="tel:+41442610002">
+              <span data-i18n="contact.phoneLabel">Phone</span>
+              <strong>044 261 0002</strong>
+            </a>
+            <a href="https://www.instagram.com/newyorknails_stadelhofer38zuri/" target="_blank" rel="noreferrer">
+              <span>Instagram</span>
+              <strong>@newyorknails_stadelhofer38zuri</strong>
+            </a>
+            <a href="https://beprobooking.com/salon/new-york-nails-stadelhofen" target="_blank" rel="noreferrer">
+              <span data-i18n="contact.bookingLabel">Booking</span>
+              <strong data-i18n="contact.bookingText">Reserve your appointment</strong>
+            </a>
+          </div>
+        </div>
+
+        <div class="map-embed" aria-label="Google map to Stadi Züri Nails">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2702.2753760302776!2d8.544221775871488!3d47.36754360445564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aa179614b8fb7%3A0x47f6d4f7ddb9c2b3!2sNagelstudio%20-%20New%20York%20Nails%20Stadelhoffen%20Z%C3%BCrich!5e0!3m2!1svi!2s!4v1780027428727!5m2!1svi!2s"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Stadi Züri Nails on Google Maps"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <p>Stadi Züri Nails</p>
+        <p>Stadelhoferstrasse 38, 8001 Zürich</p>
+      </div>
+      <div class="footer-credit">
+        <p>&copy; 2026 All Rights Reserved</p>
+        <p>Designed by Hoangcaster</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
