@@ -1,21 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap");
 
 :root {
-  --ink: #111915;
-  --muted: #657068;
-  --paper: #f8f3ea;
-  --paper-light: #fffdf8;
-  --soft: #eee5d8;
-  --line: #ddd0bd;
-  --wine: #8b123d;
-  --wine-dark: #5d0d29;
-  --gold: #c8a35c;
-  --gold-light: #efd99d;
-  --green: #102d25;
-  --night: #07120f;
+  --ink: #3f2419;
+  --muted: #8b6e63;
+  --paper: #fff3ef;
+  --paper-light: #fffdfb;
+  --soft: #f7dfd6;
+  --line: #e6c3b6;
+  --wine: #b86958;
+  --wine-dark: #6b3528;
+  --gold: #c98c79;
+  --gold-light: #f5d0c4;
+  --green: #7e5143;
+  --night: #2a140f;
   --white: #ffffff;
-  --shadow: 0 24px 70px rgba(13, 23, 19, 0.16);
-  --shadow-strong: 0 28px 90px rgba(7, 18, 15, 0.34);
+  --shadow: 0 24px 70px rgba(107, 53, 40, 0.14);
+  --shadow-strong: 0 28px 90px rgba(42, 20, 15, 0.26);
   font-family:
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
@@ -37,8 +37,8 @@ body {
   overflow-x: hidden;
   color: var(--ink);
   background:
-    linear-gradient(90deg, rgba(200, 163, 92, 0.07) 1px, transparent 1px),
-    linear-gradient(180deg, var(--paper-light) 0%, var(--paper) 52%, #f1e8dc 100%);
+    linear-gradient(90deg, rgba(201, 140, 121, 0.1) 1px, transparent 1px),
+    linear-gradient(180deg, var(--paper-light) 0%, var(--paper) 52%, #f8dfd5 100%);
   background-size: 96px 96px, auto;
   line-height: 1.6;
   letter-spacing: 0;
@@ -68,11 +68,11 @@ a {
   max-width: 1180px;
   min-height: 68px;
   padding: 10px 16px;
-  color: var(--white);
-  background: rgba(7, 18, 15, 0.8);
-  border: 1px solid rgba(239, 217, 157, 0.28);
+  color: var(--ink);
+  background: rgba(255, 253, 251, 0.9);
+  border: 1px solid rgba(201, 140, 121, 0.36);
   border-radius: 8px;
-  box-shadow: 0 18px 54px rgba(7, 18, 15, 0.28);
+  box-shadow: 0 18px 54px rgba(107, 53, 40, 0.16);
   transform: translateX(-50%);
   backdrop-filter: blur(20px);
 }
@@ -93,10 +93,10 @@ a {
   width: 44px;
   height: 44px;
   overflow: hidden;
-  border: 1px solid rgba(239, 217, 157, 0.58);
+  border: 1px solid rgba(201, 140, 121, 0.58);
   border-radius: 50%;
   background: var(--paper-light);
-  box-shadow: 0 0 0 3px rgba(239, 217, 157, 0.08);
+  box-shadow: 0 0 0 3px rgba(201, 140, 121, 0.1);
 }
 
 .brand-avatar img {
@@ -121,7 +121,7 @@ a {
   min-height: 40px;
   padding: 9px 13px;
   border-radius: 999px;
-  color: rgba(255, 255, 255, 0.78);
+  color: rgba(63, 36, 25, 0.72);
   font-size: 0.93rem;
   font-weight: 700;
   transition:
@@ -131,8 +131,8 @@ a {
 
 .main-nav a:hover,
 .main-nav a:focus-visible {
-  color: var(--white);
-  background: rgba(239, 217, 157, 0.14);
+  color: var(--wine-dark);
+  background: rgba(201, 140, 121, 0.14);
 }
 
 .language-switch {
@@ -140,9 +140,9 @@ a {
   display: flex;
   gap: 4px;
   padding: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(201, 140, 121, 0.24);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.66);
 }
 
 .language-button {
@@ -155,7 +155,7 @@ a {
   padding: 6px 10px;
   border: 0;
   border-radius: 999px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(63, 36, 25, 0.68);
   background: transparent;
   font: inherit;
   font-size: 0.9rem;
@@ -164,8 +164,9 @@ a {
 }
 
 .language-button.is-active {
-  color: var(--night);
-  background: linear-gradient(180deg, var(--gold-light), var(--gold));
+  color: var(--ink);
+  background: linear-gradient(180deg, #edc5ba, var(--gold-light));
+  box-shadow: 0 8px 24px rgba(184, 105, 88, 0.2);
 }
 
 .flag {
@@ -175,7 +176,7 @@ a {
   height: 13px;
   overflow: hidden;
   border-radius: 2px;
-  box-shadow: 0 0 0 1px rgba(7, 18, 15, 0.18);
+  box-shadow: 0 0 0 1px rgba(42, 20, 15, 0.18);
 }
 
 .flag-gb {
@@ -212,7 +213,7 @@ a {
   bottom: 0;
   z-index: 1;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(239, 217, 157, 0.74), transparent);
+  background: linear-gradient(90deg, transparent, rgba(245, 208, 196, 0.74), transparent);
 }
 
 .hero-video,
@@ -225,13 +226,13 @@ a {
 
 .hero-video {
   object-fit: cover;
-  filter: saturate(0.92) contrast(1.05);
+  filter: saturate(1.04) contrast(1.02) brightness(1.04);
 }
 
 .hero-overlay {
   background:
-    linear-gradient(90deg, rgba(7, 18, 15, 0.9), rgba(7, 18, 15, 0.58) 46%, rgba(7, 18, 15, 0.2)),
-    linear-gradient(180deg, rgba(7, 18, 15, 0.64), rgba(7, 18, 15, 0.08) 34%, rgba(7, 18, 15, 0.78));
+    linear-gradient(90deg, rgba(42, 20, 15, 0.84), rgba(107, 53, 40, 0.5) 46%, rgba(255, 243, 239, 0.08)),
+    linear-gradient(180deg, rgba(42, 20, 15, 0.54), rgba(42, 20, 15, 0.1) 34%, rgba(42, 20, 15, 0.68));
 }
 
 .hero-signature {
@@ -244,11 +245,11 @@ a {
   width: 190px;
   height: 190px;
   padding: 8px;
-  border: 1px solid rgba(239, 217, 157, 0.5);
+  border: 1px solid rgba(245, 208, 196, 0.5);
   border-radius: 50%;
-  background: rgba(7, 18, 15, 0.38);
+  background: rgba(255, 253, 251, 0.22);
   box-shadow:
-    0 24px 80px rgba(7, 18, 15, 0.38),
+    0 24px 80px rgba(42, 20, 15, 0.32),
     inset 0 0 0 8px rgba(255, 255, 255, 0.035);
   transform: translateY(-50%);
   backdrop-filter: blur(8px);
@@ -258,7 +259,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 1px solid rgba(239, 217, 157, 0.36);
+  border: 1px solid rgba(245, 208, 196, 0.4);
   border-radius: 50%;
   background: var(--paper-light);
 }
@@ -270,7 +271,7 @@ a {
   max-width: 720px;
   margin-left: max(0px, calc((100vw - 1180px) / 2));
   padding-left: 28px;
-  border-left: 1px solid rgba(239, 217, 157, 0.5);
+  border-left: 1px solid rgba(245, 208, 196, 0.58);
 }
 
 .eyebrow {
@@ -351,26 +352,26 @@ h3 {
 }
 
 .button-primary {
-  color: var(--white);
-  background: linear-gradient(180deg, #9b1746, var(--wine-dark));
-  box-shadow: 0 16px 46px rgba(91, 13, 41, 0.34);
+  color: var(--ink);
+  background: linear-gradient(180deg, #efc6bb, var(--gold));
+  box-shadow: 0 16px 46px rgba(184, 105, 88, 0.28);
 }
 
 .button-primary:hover,
 .button-primary:focus-visible {
-  background: linear-gradient(180deg, #a81b4d, #4b0a22);
+  background: linear-gradient(180deg, #f4d3ca, #bf806e);
 }
 
 .button-secondary {
   color: var(--white);
-  border: 1px solid rgba(239, 217, 157, 0.52);
-  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(245, 208, 196, 0.62);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .button-secondary:hover,
 .button-secondary:focus-visible {
-  border-color: rgba(239, 217, 157, 0.82);
-  background: rgba(239, 217, 157, 0.12);
+  border-color: rgba(255, 243, 239, 0.86);
+  background: rgba(245, 208, 196, 0.18);
 }
 
 .button.compact {
@@ -389,17 +390,17 @@ h3 {
   margin: 58px auto 0;
   padding: 0;
   overflow: hidden;
-  border: 1px solid rgba(239, 217, 157, 0.28);
+  border: 1px solid rgba(245, 208, 196, 0.34);
   border-radius: 8px;
-  background: rgba(239, 217, 157, 0.2);
-  box-shadow: 0 20px 70px rgba(7, 18, 15, 0.22);
+  background: rgba(245, 208, 196, 0.24);
+  box-shadow: 0 20px 70px rgba(42, 20, 15, 0.22);
   backdrop-filter: blur(18px);
 }
 
 .hero-facts div {
   min-height: 96px;
   padding: 20px;
-  background: rgba(7, 18, 15, 0.56);
+  background: rgba(42, 20, 15, 0.62);
 }
 
 .hero-facts dt {
@@ -444,7 +445,7 @@ h3 {
 }
 
 .salon-section {
-  background: linear-gradient(180deg, var(--paper-light), var(--paper));
+  background: linear-gradient(180deg, var(--paper-light), #fff0eb);
 }
 
 .editorial-media {
@@ -468,7 +469,7 @@ h3 {
 .feature-media-main {
   width: 78%;
   margin-left: auto;
-  border: 1px solid rgba(200, 163, 92, 0.34);
+  border: 1px solid rgba(201, 140, 121, 0.34);
 }
 
 .feature-media-main img {
@@ -489,21 +490,19 @@ h3 {
 
 .services-section {
   position: relative;
-  color: var(--white);
+  color: var(--ink);
   background:
-    linear-gradient(90deg, rgba(239, 217, 157, 0.08) 1px, transparent 1px),
-    linear-gradient(180deg, #10251f, var(--night));
+    linear-gradient(90deg, rgba(201, 140, 121, 0.12) 1px, transparent 1px),
+    linear-gradient(180deg, #fff9f6, #f7ddd3);
   background-size: 110px 110px, auto;
 }
 
-.services-section .eyebrow,
-.menu-section .eyebrow {
-  color: var(--gold-light);
+.services-section .eyebrow {
+  color: var(--wine);
 }
 
-.services-section h2,
-.menu-section h2 {
-  color: var(--white);
+.services-section h2 {
+  color: var(--ink);
 }
 
 .section-heading {
@@ -534,10 +533,10 @@ h3 {
   min-height: 210px;
   padding: 30px;
   overflow: hidden;
-  color: var(--white);
-  border-color: rgba(239, 217, 157, 0.22);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.04));
-  box-shadow: none;
+  color: var(--ink);
+  border-color: rgba(201, 140, 121, 0.28);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: var(--shadow);
 }
 
 .service-card::before {
@@ -553,7 +552,7 @@ h3 {
 .service-index {
   display: block;
   margin-bottom: 28px;
-  color: var(--gold-light);
+  color: var(--gold);
   font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   font-size: 2.2rem;
   font-weight: 700;
@@ -566,7 +565,7 @@ h3 {
 
 .service-card p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--muted);
 }
 
 .offer-card p {
@@ -576,8 +575,8 @@ h3 {
 
 .offer-section {
   background:
-    linear-gradient(135deg, rgba(139, 18, 61, 0.08), transparent 42%),
-    linear-gradient(180deg, #f5eadf, var(--paper-light));
+    linear-gradient(135deg, rgba(201, 140, 121, 0.14), transparent 42%),
+    linear-gradient(180deg, #fff6f2, var(--paper-light));
 }
 
 .offer-list {
@@ -603,8 +602,8 @@ h3 {
   min-height: 82px;
   padding: 12px;
   border-radius: 8px;
-  color: var(--gold-light);
-  background: var(--night);
+  color: #ffe8df;
+  background: linear-gradient(180deg, var(--wine), var(--wine-dark));
   font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   font-size: 1.7rem;
   font-weight: 700;
@@ -612,13 +611,21 @@ h3 {
 }
 
 .menu-section {
-  color: var(--white);
+  color: var(--ink);
   background:
-    linear-gradient(90deg, rgba(239, 217, 157, 0.09) 1px, transparent 1px),
-    linear-gradient(180deg, #0d211b 0%, #07120f 100%);
+    linear-gradient(90deg, rgba(201, 140, 121, 0.11) 1px, transparent 1px),
+    linear-gradient(180deg, var(--paper) 0%, #f5d8cd 100%);
   background-size: 120px 120px, auto;
-  border-top: 1px solid rgba(239, 217, 157, 0.24);
-  border-bottom: 1px solid rgba(239, 217, 157, 0.24);
+  border-top: 1px solid rgba(201, 140, 121, 0.24);
+  border-bottom: 1px solid rgba(201, 140, 121, 0.24);
+}
+
+.menu-section .eyebrow {
+  color: var(--wine);
+}
+
+.menu-section h2 {
+  color: var(--ink);
 }
 
 .menu-heading {
@@ -636,9 +643,9 @@ h3 {
 
 .price-card {
   padding: 28px;
-  border-color: rgba(239, 217, 157, 0.22);
-  background: linear-gradient(180deg, rgba(255, 253, 248, 0.08), rgba(255, 253, 248, 0.035));
-  box-shadow: 0 18px 58px rgba(0, 0, 0, 0.22);
+  border-color: rgba(201, 140, 121, 0.28);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 18px 58px rgba(107, 53, 40, 0.13);
 }
 
 .price-card-wide {
@@ -647,7 +654,7 @@ h3 {
 
 .price-card h3 {
   margin-bottom: 20px;
-  color: var(--gold-light);
+  color: var(--wine-dark);
   font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   font-size: 1.45rem;
   font-weight: 700;
@@ -673,8 +680,8 @@ h3 {
   gap: 18px;
   align-items: start;
   padding: 12px 0;
-  border-top: 1px solid rgba(239, 217, 157, 0.16);
-  color: rgba(255, 255, 255, 0.76);
+  border-top: 1px solid rgba(201, 140, 121, 0.18);
+  color: var(--muted);
 }
 
 .price-list li:first-child,
@@ -688,7 +695,7 @@ h3 {
 }
 
 .price {
-  color: var(--gold-light);
+  color: var(--wine-dark);
   font-weight: 800;
   white-space: nowrap;
 }
@@ -701,10 +708,10 @@ h3 {
 }
 
 .price-old {
-  color: rgba(255, 255, 255, 0.48);
+  color: rgba(107, 53, 40, 0.46);
   font-weight: 700;
   text-decoration: line-through;
-  text-decoration-color: #d64a4a;
+  text-decoration-color: #cf7065;
   text-decoration-thickness: 2px;
 }
 
@@ -723,10 +730,10 @@ h3 {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border: 1px solid rgba(200, 163, 92, 0.2);
+  border: 1px solid rgba(201, 140, 121, 0.24);
   border-radius: 8px;
   background: var(--soft);
-  box-shadow: 0 12px 34px rgba(17, 25, 21, 0.12);
+  box-shadow: 0 12px 34px rgba(107, 53, 40, 0.12);
 }
 
 .video-section {
@@ -745,7 +752,7 @@ h3 {
   width: 100%;
   aspect-ratio: 16 / 10;
   object-fit: cover;
-  border: 1px solid rgba(200, 163, 92, 0.24);
+  border: 1px solid rgba(201, 140, 121, 0.28);
   border-radius: 8px;
   background: #111;
   box-shadow: var(--shadow);
@@ -758,9 +765,9 @@ h3 {
 .contact-panel {
   display: grid;
   overflow: hidden;
-  color: var(--white);
-  border-color: rgba(239, 217, 157, 0.24);
-  background: var(--night);
+  color: var(--ink);
+  border-color: rgba(201, 140, 121, 0.28);
+  background: rgba(255, 255, 255, 0.86);
 }
 
 .contact-panel a {
@@ -770,7 +777,7 @@ h3 {
   align-items: center;
   min-height: 82px;
   padding: 19px 22px;
-  border-bottom: 1px solid rgba(239, 217, 157, 0.16);
+  border-bottom: 1px solid rgba(201, 140, 121, 0.18);
 }
 
 .contact-panel a:last-child {
@@ -779,11 +786,11 @@ h3 {
 
 .contact-panel a:hover,
 .contact-panel a:focus-visible {
-  background: rgba(239, 217, 157, 0.08);
+  background: rgba(201, 140, 121, 0.12);
 }
 
 .contact-panel span {
-  color: var(--gold-light);
+  color: var(--wine);
   font-size: 0.8rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -791,14 +798,14 @@ h3 {
 
 .contact-panel strong {
   overflow-wrap: anywhere;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--ink);
   font-size: 1rem;
 }
 
 .map-embed {
   margin-top: 42px;
   overflow: hidden;
-  border: 1px solid rgba(200, 163, 92, 0.3);
+  border: 1px solid rgba(201, 140, 121, 0.3);
   border-radius: 8px;
   background: var(--soft);
   box-shadow: var(--shadow);
@@ -819,7 +826,7 @@ h3 {
   padding: 30px 28px;
   color: rgba(255, 255, 255, 0.78);
   background: var(--night);
-  border-top: 1px solid rgba(239, 217, 157, 0.22);
+  border-top: 1px solid rgba(245, 208, 196, 0.22);
 }
 
 .site-footer div {
@@ -853,7 +860,7 @@ h3 {
 
 @media (max-width: 940px) {
   .site-header {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: minmax(0, 1fr) auto;
     gap: 12px;
     width: calc(100% - 28px);
   }
@@ -923,7 +930,7 @@ h3 {
   }
 
   .price-list.multi-column li:nth-child(2) {
-    border-top: 1px solid rgba(239, 217, 157, 0.16);
+    border-top: 1px solid rgba(201, 140, 121, 0.18);
   }
 
   .gallery-grid {
@@ -945,6 +952,8 @@ h3 {
 
   .brand {
     gap: 8px;
+    width: 100%;
+    padding-right: 112px;
     min-width: 0;
     font-size: 1.08rem;
   }
@@ -960,6 +969,12 @@ h3 {
     gap: 4px;
     padding-inline: 6px;
     font-size: 0.8rem;
+  }
+
+  .language-switch {
+    position: absolute;
+    top: 10px;
+    right: 12px;
   }
 
   .main-nav {
