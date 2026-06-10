@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    documentTitle: "Stadi Züri Nails | Zürich Nail Salon",
+    documentTitle: "Newyork Nails | Zürich Nail Salon",
     "nav.salon": "Salon",
     "nav.menu": "Menu",
     "nav.gallery": "Gallery",
@@ -17,7 +17,7 @@ const translations = {
     "salon.eyebrow": "Stadelhofen, Zürich",
     "salon.title": "A refined nail stop near the city center.",
     "salon.copy":
-      "Stadi Züri Nails brings together clean European styling, careful shaping and expressive nail art in a calm studio setting.",
+      "Newyork Nails brings together clean European styling, careful shaping and expressive nail art in a calm studio setting.",
     "services.eyebrow": "Nail care",
     "services.title": "Made for natural polish and statement detail.",
     "services.cards.0.title": "Manicure",
@@ -90,7 +90,7 @@ const translations = {
     "contact.bookingText": "Reserve your appointment",
   },
   de: {
-    documentTitle: "Stadi Züri Nails | Nagelstudio in Zürich",
+    documentTitle: "Newyork Nails | Nagelstudio in Zürich",
     "nav.salon": "Salon",
     "nav.menu": "Preise",
     "nav.gallery": "Galerie",
@@ -107,7 +107,7 @@ const translations = {
     "salon.eyebrow": "Stadelhofen, Zürich",
     "salon.title": "Ein gepflegter Nail-Stop nahe dem Stadtzentrum.",
     "salon.copy":
-      "Stadi Züri Nails verbindet klare europäische Ästhetik, sorgfältige Formgebung und ausdrucksstarke Nail Art in ruhiger Studioatmosphäre.",
+      "Newyork Nails verbindet klare europäische Ästhetik, sorgfältige Formgebung und ausdrucksstarke Nail Art in ruhiger Studioatmosphäre.",
     "services.eyebrow": "Nagelpflege",
     "services.title": "Für natürliche Eleganz und besondere Details.",
     "services.cards.0.title": "Maniküre",
@@ -202,7 +202,7 @@ function setLanguage(language) {
 
   document.documentElement.lang = language;
   document.title = dictionary.documentTitle;
-  localStorage.setItem("stadi-zuri-language", language);
+  localStorage.setItem("newyork-nails-language", language);
 
   languageButtons.forEach((button) => {
     const isActive = button.dataset.lang === language;
@@ -215,6 +215,6 @@ languageButtons.forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.lang));
 });
 
-const savedLanguage = localStorage.getItem("stadi-zuri-language");
+const savedLanguage = localStorage.getItem("newyork-nails-language");
 const browserLanguage = navigator.language?.toLowerCase().startsWith("de") ? "de" : "en";
 setLanguage(savedLanguage || browserLanguage);
